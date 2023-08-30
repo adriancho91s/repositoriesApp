@@ -24,8 +24,8 @@ const styles = StyleSheet.create({
     textAlignCenter: {
         textAlign: 'center',
     },
-    colors: {
-        white: '#FFFFFF',
+    whiteText: {
+        color: '#FFFFFF',
     }
 });
 
@@ -34,7 +34,7 @@ export default function StyledText({ children, color, fontSize, fontWeight, alig
         styles.text,
         color === 'primary' && styles.colorPrimary,
         color === 'secondary' && styles.colorSecondary,
-        color === 'white' && styles.colors.white,
+        color === 'white' && styles.whiteText,
         align === 'center' && styles.textAlignCenter,
         fontSize === 'subheading' && styles.subheading,
         fontWeight === 'bold' && styles.bold,

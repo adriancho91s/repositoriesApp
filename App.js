@@ -1,11 +1,16 @@
 import React from 'react';
-import { View } from 'react-native';
 import Main from './src/components/Main';
+import { NavigationContainer } from '@react-navigation/native';
+import { View } from 'react-native-web';
+import AppBar from './src/components/AppBar';
+
+
 
 export default function App() {
   return (
-    <View>
+   <View>
+      <AppBar />
       <Main />
-    </View>
+   </View>
   );
 }

@@ -2,6 +2,7 @@
   "expo": {
     "name": "rate-repository-app",
     "slug": "rate-repository-app",
+    "scheme": "rate-repository-app",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
@@ -10,6 +11,12 @@
       "eas": {
         "projectId": "bec27013-15c6-4491-b787-9db93ea75d23"
       }
-    }
+    },
+    "plugins": [
+      "expo-router"
+    ]
+  },
+  "web": {
+    "bundler": "metro"
   }
 }
